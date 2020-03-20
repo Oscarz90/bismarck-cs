@@ -1,0 +1,34 @@
+{
+  "name": "bismarck-cs",
+  "version": "1.0.0-alpha",
+  "description": "Computer Science Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oscarz90/bismarck-cs.git"
+  },
+  "keywords": [
+    "data structures",
+    "sortin algorithmsg",
+    "computer science",
+    "js"
+  ],
+  "author": "Oscar Martinez Sanchez <omsz90@live.com.mx>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Oscarz90/bismarck-cs/issues"
+  },
+  "homepage": "https://github.com/Oscarz90/bismarck-cs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {}
+}
