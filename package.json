@@ -7,6 +7,8 @@
   "author": "Oscar Martinez Sanchez <omsz90@live.com.mx>",
   "license": "Apache-2.0",
   "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
     "start": "nodemon --exec babel-node src/index.js"
   },
   "devDependencies": {
