@@ -1,0 +1,9 @@
+{
+  "name": "bismarck-cs",
+  "version": "1.0.0-alpha",
+  "description": "Computer Science Repository",
+  "main": "index.js",
+  "repository": "git@github.com:Oscarz90/bismarck-cs.git",
+  "author": "Oscar Martinez Sanchez <omsz90@live.com.mx>",
+  "license": "Apache-2.0"
+}
