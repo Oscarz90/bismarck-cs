@@ -1,4 +1,5 @@
-import pkg from '../package.json'
+/* eslint-disable no-console */
+import pkg from '../package.json';
 
 console.log(pkg.description);
 console.log(`Version: ${pkg.version}`);
