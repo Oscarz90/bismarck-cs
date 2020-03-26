@@ -13,20 +13,27 @@
     "lint:fix": "eslint --fix src",
     "prebuild": "yarn run clean:dist",
     "serve": "node dist",
-    "start": "nodemon --exec babel-node src/index.js"
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks ./src/**/*.test.js",
+    "test:single": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks",
+    "test:watch": "cross-env NODE_ENV=test yarn test -w"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
     "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.1.1",
     "nodemon": "^2.0.2",
     "prettier": "^2.0.2",
     "shx": "^0.3.2"
