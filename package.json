@@ -7,8 +7,12 @@
   "author": "Oscar Martinez Sanchez <omsz90@live.com.mx>",
   "license": "Apache-2.0",
   "scripts": {
+    "build": "cross-env NODE_ENV=production babel src -d dist -s",
+    "clean:dist": "shx rm -rf dist",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
+    "prebuild": "yarn run clean:dist",
+    "serve": "node dist",
     "start": "nodemon --exec babel-node src/index.js"
   },
   "devDependencies": {
@@ -17,12 +21,14 @@
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
     "nodemon": "^2.0.2",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "shx": "^0.3.2"
   }
 }
