@@ -7,6 +7,8 @@
   "author": "Oscar Martinez Sanchez <omsz90@live.com.mx>",
   "license": "Apache-2.0",
   "scripts": {
+    "benchmark": "babel-node benchmark",
+    "benchmark:watch": "nodemon src/index.js --exec babel-node benchmark",
     "build": "cross-env NODE_ENV=production babel src -d dist -s",
     "clean:coverage": "shx rm -rf coverage",
     "clean:dist": "shx rm -rf dist",
@@ -30,6 +32,7 @@
     "@babel/register": "^7.9.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-istanbul": "^6.0.0",
+    "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
