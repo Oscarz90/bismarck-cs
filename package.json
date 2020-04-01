@@ -15,6 +15,7 @@
     "clean:dist": "shx rm -rf dist",
     "clean:reports": "shx rm -rf reports",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha src/*.js",
+    "debug": "nodemon src/index.js --exec babel-node --debug",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "postcoverage": "cross-env NODE_ENV=test nyc check-coverage",
