@@ -8,10 +8,14 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "cross-env NODE_ENV=production babel src -d dist -s",
+    "clean:coverage": "shx rm -rf coverage",
     "clean:dist": "shx rm -rf dist",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha src/*.js",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
+    "postcoverage": "cross-env NODE_ENV=test nyc check-coverage",
     "prebuild": "yarn run clean:dist",
+    "precoverage": "yarn run clean:coverage",
     "serve": "node dist",
     "start": "nodemon --exec babel-node src/index.js",
     "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks ./src/**/*.test.js",
@@ -25,6 +29,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/register": "^7.9.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-istanbul": "^6.0.0",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
@@ -35,6 +40,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "mocha": "^7.1.1",
     "nodemon": "^2.0.2",
+    "nyc": "^15.0.0",
     "prettier": "^2.0.2",
     "shx": "^0.3.2"
   }
