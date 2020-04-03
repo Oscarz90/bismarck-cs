@@ -31,6 +31,17 @@
     "test:single": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks",
     "test:watch": "cross-env NODE_ENV=test yarn test -w"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
@@ -48,6 +59,8 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
     "mocha": "^7.1.1",
     "mochawesome": "^5.0.0",
     "nodejs-dashboard": "^0.5.1",
