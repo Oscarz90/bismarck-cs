@@ -1,6 +1,6 @@
 {
   "name": "bismarck-cs",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Computer Science Repository",
   "main": "src/index.js",
   "repository": "git@github.com:Oscarz90/bismarck-cs.git",
@@ -10,6 +10,7 @@
     "benchmark": "babel-node benchmark",
     "benchmark:watch": "nodemon src/index.js --exec babel-node benchmark",
     "build": "cross-env NODE_ENV=production babel src -d dist -s",
+    "changelog": "standard-changelog --preset angular-emoji --outfile changelog-temp.md",
     "clean": "yarn run clean:dist && yarn run clean:reports && yarn run clean:coverage",
     "clean:coverage": "shx rm -rf coverage",
     "clean:dist": "shx rm -rf dist",
@@ -53,6 +54,7 @@
     "babel-plugin-istanbul": "^6.0.0",
     "benchmark": "^2.1.4",
     "chai": "^4.2.0",
+    "conventional-changelog-angular-emoji": "^0.2.2",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
@@ -69,6 +71,7 @@
     "nyc": "^15.0.0",
     "prettier": "^2.0.2",
     "shx": "^0.3.2",
+    "standard-changelog": "^2.0.21",
     "standard-version": "^7.1.0"
   }
 }
