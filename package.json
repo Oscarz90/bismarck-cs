@@ -1,6 +1,6 @@
 {
   "name": "bismarck-cs",
-  "version": "1.0.0-alpha",
+  "version": "0.0.15",
   "description": "Computer Science Repository",
   "main": "src/index.js",
   "repository": "git@github.com:Oscarz90/bismarck-cs.git",
