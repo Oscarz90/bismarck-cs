@@ -24,6 +24,7 @@
     "prebuild": "yarn run clean:dist",
     "precoverage": "yarn run clean:coverage",
     "premonitor": "yarn run clean:dist && yarn run build",
+    "release": "standard-version --no-verify",
     "serve": "node dist",
     "start": "nodemon --exec babel-node src/index.js",
     "pretest": "yarn run clean:coverage && yarn run clean:reports",
@@ -67,6 +68,7 @@
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
     "prettier": "^2.0.2",
-    "shx": "^0.3.2"
+    "shx": "^0.3.2",
+    "standard-version": "^7.1.0"
   }
 }
