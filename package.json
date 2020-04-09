@@ -1,6 +1,6 @@
 {
   "name": "bismarck-cs",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Computer Science Repository",
   "main": "src/index.js",
   "repository": "git@github.com:Oscarz90/bismarck-cs.git",
@@ -30,6 +30,11 @@
     "premonitor": "yarn run clean:dist && yarn run build",
     "pretest": "yarn run clean:coverage && yarn run clean:reports",
     "release": "standard-version --no-verify",
+    "security:auth": "snyk auth",
+    "security:test": "snyk test",
+    "security:wizard": "snyk wizard",
+    "security:protect": "snyk protect",
+    "security:monitor": "snyk monitor",
     "serve": "node dist",
     "start": "nodemon --exec babel-node src/index.js",
     "tasks": "ntl",
@@ -80,6 +85,7 @@
     "nyc": "^15.0.0",
     "prettier": "^2.0.2",
     "shx": "^0.3.2",
+    "snyk": "^1.305.1",
     "standard-changelog": "^2.0.21",
     "standard-version": "^7.1.0"
   }
