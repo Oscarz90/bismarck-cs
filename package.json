@@ -1,6 +1,6 @@
 {
   "name": "bismarck-cs",
-  "version": "0.0.22-beta.0",
+  "version": "0.0.22-beta.1",
   "description": "Computer Science Repository",
   "main": "src/index.js",
   "repository": "git@github.com:Oscarz90/bismarck-cs.git",
@@ -30,7 +30,7 @@
     "premonitor": "yarn run clean:dist && yarn run build",
     "prerelease": "yarn run setenv:prod && yarn run clean && yarn run build && yarn run lint && yarn run test && yarn run coverage",
     "pretest": "yarn run clean:coverage && yarn run clean:reports",
-    "release": "standard-version --no-verify",
+    "release": "standard-version",
     "security:auth": "snyk auth",
     "security:test": "snyk test",
     "security:wizard": "snyk wizard",
