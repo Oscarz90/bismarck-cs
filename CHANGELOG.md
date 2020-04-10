@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.22-beta.1](https://github.com/Oscarz90/bismarck-cs/compare/v0.0.22-beta.0...v0.0.22-beta.1) (2020-04-10)
+
 ### 0.0.22-beta.0 (2020-04-09)
 
 
