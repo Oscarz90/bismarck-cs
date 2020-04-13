@@ -42,3 +42,5 @@ assignees: ''
 
 **Anything else relevant?**
 >:pencil2: Do any of these matter: operating system, IDE, package manager, HTTP server, browser (brand and version), package.json file, ...? If so, please mention it below :arrow_down:
+
+>:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesnt apply the concept
