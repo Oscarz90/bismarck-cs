@@ -12,7 +12,7 @@ assignees: ''
 >:pencil2: A clear and concise description of the problem
 
 ## :pushpin: What's the affected URL?
->:pencil2: https://github.com/Oscarz90/bismarck-cs/docs/...
+>:pencil2: e.g. https://github.com/Oscarz90/bismarck-cs/docs/...
 
 ## :ok_hand: Expected behavior
 >:pencil2: A clear and concise description of what you expected to happen
@@ -45,3 +45,5 @@ assignees: ''
 
 **Anything else relevant?**
 >:pencil2: Do any of these matter: operating system, IDE, package manager, HTTP server, browser (brand and version), package.json file, ...? If so, please mention it below :arrow_down:
+
+>:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesnt apply the concept
