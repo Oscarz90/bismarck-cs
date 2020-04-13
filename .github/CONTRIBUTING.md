@@ -157,12 +157,13 @@ Each commit message consists of a **header**, a **body** and a **footer**.  The 
 format that includes a **type**, a **scope** and a **subject**:
 
 ```
-<type>(<scope>): <subject>
+<type>(<scope*>): <subject>
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
+**\* scope**: this can be optional
 
 The **header** is mandatory and the **scope** of the header is optional.
 
@@ -198,7 +199,7 @@ Must be one of the following:
 * **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 * **test**: Adding missing tests or correcting existing tests
 
-### Scope
+### Scope (_optional_)
 The scope should be the name of the npm package affected (as perceived by the person reading the changelog generated from commit messages).
 
 The following is the list of supported scopes:
