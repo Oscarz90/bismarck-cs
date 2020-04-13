@@ -9,7 +9,7 @@
 
 ## Test
 
->In this section, describe how to test the PR.
+>:pencil2: In this section, describe how to test the PR.
 >
 >+ Describe the acceptance criteria.  
 >+ How can this be tested by another developer?  
