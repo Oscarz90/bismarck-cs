@@ -9,25 +9,22 @@ assignees: ''
 # :books: Docs issue report or enhancement request
 
 ## :pencil: Description
-
->:pencil2: A clear and concise description of the problem...
+>:pencil2: A clear and concise description of the problem
 
 ## :pushpin: What's the affected URL?
-
 >:pencil2: https://github.com/Oscarz90/bismarck-cs/docs/...
 
 ## :ok_hand: Expected behavior
->:pencil2: A clear and concise description of what you expected to happen.
+>:pencil2: A clear and concise description of what you expected to happen
 
 ## :ambulance: Minimal Reproduction
->:camera: Often a screenshot can help to capture the issue better than a long description.  
+>:camera: Often a screenshot can help to capture the issue better than a long description  
 >:pencil2: Steps to reproduce the behavior:
 >
 > 1. Go to '...'
 > 2. Click on '....'
 > 3. Scroll down to '....'
 > 4. See error
-> 5. Screenshoots evidence (optional)
 
 ## 🔥 Exception or Error
 >:pencil2: If the issue is accompanied by an exception or an error, please share it below:
