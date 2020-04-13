@@ -1,7 +1,7 @@
 **Ticket:** _keyword #issue-number_
 >:pencil2: **keywords**: Closes, Fixes, Resolves  
->_e.g. **Issue Number:** Resolves #1_  
->_e.g. **Issue Number:** Resolves #1, Closes #4_
+>_e.g. **Ticket:** Resolves #1_  
+>_e.g. **Ticket:** Resolves #1, Closes #4_
 
 ## Description
 
