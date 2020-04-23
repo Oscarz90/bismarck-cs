@@ -3,10 +3,9 @@ name: ci-cd
 on:
   push:
     branches: 
-      - master
+      - '!master'
   pull_request:
     branches: 
-      - master         # Push events on master branch
       - 'bsmrk-**' # Push events to branches matching refs/heads/mona/octocat
 
 jobs:
