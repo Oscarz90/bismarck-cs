@@ -1,4 +1,4 @@
-name: Node.js CI
+name: ci/cd
 
 on:
   push:
@@ -26,5 +26,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run test
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install --frozen-lockfile
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: test
