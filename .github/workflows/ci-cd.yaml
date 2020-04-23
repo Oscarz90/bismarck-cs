@@ -4,7 +4,6 @@ on:
   push:
     branches: 
     - master
-    - 'bsmrk-**'
   pull_request:
     branches: 
       - master         # Push events on master branch
