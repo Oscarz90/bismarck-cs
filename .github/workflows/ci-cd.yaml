@@ -22,18 +22,15 @@ jobs:
     steps: 
       - name: Fetch Code
         uses: actions/checkout@v2
-        
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-          
       - name: Install dependencies
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install --frozen-lockfile
-
       - name: Execute tests
-      - uses: borales/actions-yarn@v2.0.0
+        uses: borales/actions-yarn@v2.0.0
         with:
           cmd: test
