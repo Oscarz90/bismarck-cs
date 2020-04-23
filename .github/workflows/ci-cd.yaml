@@ -3,10 +3,11 @@ name: ci-cd
 on:
   push:
     branches: 
-      - '!master'
+      - master
   pull_request:
-    branches:
-      - 'bsmrk-**'
+    branches: 
+      - master         # Push events on master branch
+      - 'bsmrk-**' # Push events to branches matching refs/heads/mona/octocat
 
 jobs:
   test:
@@ -18,7 +19,7 @@ jobs:
         node-version: [10.x, 12.x]
         
     steps: 
-      - name: Checkout Code
+      - name: Fetch Code
         uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
