@@ -54,4 +54,4 @@ Please check if your PR fulfills the following requirements:
 
 >:pencil2: If there are missing information that should be included please feel you free to use this section to add it 
 
->:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesnt apply the concept
+>:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesn't apply the concept
