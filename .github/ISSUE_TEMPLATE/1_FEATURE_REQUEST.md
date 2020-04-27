@@ -20,4 +20,4 @@ assignees: ''
 ## :wrench: Additional context (:see_no_evil: optional)
 > :pencil2: Add any other context or screenshots about the feature request here
 
->:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesnt apply the concept
+>:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesn't apply the concept
