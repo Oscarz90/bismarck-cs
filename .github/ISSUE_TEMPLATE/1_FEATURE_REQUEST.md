@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680 Feature request"
-about: Suggest a feature for Angular Framework
+about: Suggest a feature for the project
 title: '[@project-@id] - Brief description'
 labels: enhancement, new feature
 assignees: ''
