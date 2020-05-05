@@ -15,7 +15,7 @@
     "clean:coverage": "shx rm -rf coverage",
     "clean:dist": "shx rm -rf dist",
     "clean:reports": "shx rm -rf reports",
-    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha src/*.js",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha src/**/*.js",
     "debug": "nodemon src/index.js --exec babel-node --debug",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
@@ -42,7 +42,7 @@
     "start": "nodemon --exec babel-node src/index.js",
     "tasks": "ntl",
     "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks ./src/**/*.test.js",
-    "test:single": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks",
+    "test:single": "cross-env NODE_ENV=test mocha -w -c -S -R spec --require @babel/register --check-leaks",
     "test:watch": "cross-env NODE_ENV=test yarn test -w"
   },
   "husky": {
