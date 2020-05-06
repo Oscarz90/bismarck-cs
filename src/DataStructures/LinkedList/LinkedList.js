@@ -109,6 +109,9 @@ export default class LinkedList {
     return nodesData.join(' -> ');
   }
 
+  /**
+   * @returns {Boolean} A True or False value to indicate if it is Empty or not
+   */
   isEmpty() {
     return this.size === 0;
   }
