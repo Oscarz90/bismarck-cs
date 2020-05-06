@@ -15,17 +15,24 @@ export default class LinkedList {
    */
   add(data) {
     const newNode = new Node(data);
+
     if (isNil(this.head)) {
       this.head = newNode;
       this.tail = newNode;
-      this.increaseSize();
-      return;
+    } else {
+      this.tail.next = newNode;
+      this.tail = newNode;
     }
-    this.tail.next = newNode;
-    this.tail = newNode;
+
     this.increaseSize();
   }
 
+  /**
+   * Delete a given node on the list - LIFO strategy
+   * Time complexity: O(1)
+   * @param {Node} node The node to delete
+   * @param {Node} previousNode The previous node of the given node to delete, it can be null
+   */
   delete(node, previousNode) {
     if (this.isEmpty() || isNil(node)) return;
 
@@ -49,6 +56,11 @@ export default class LinkedList {
     this.decreaseSize();
   }
 
+  /**
+   * Search the node with the given data
+   * Time complexity: O(n)
+   * @param {*} data The given data to look up in the list
+   */
   get(data) {
     if (isNil(this.head) || isNil(data)) return null;
 
@@ -63,6 +75,11 @@ export default class LinkedList {
     return null;
   }
 
+  /**
+   * Search the previous node of a given node
+   * Time complexity: O(n)
+   * @param {Node} node The node from which we will obtain its previous node
+   */
   getPreviousNode(node) {
     if (node === this.head || this.isEmpty()) return null;
 
@@ -77,6 +94,11 @@ export default class LinkedList {
     return previousNode;
   }
 
+  /**
+   * Print the data of every node and return it as string concated with ->
+   * Complexity Time: O(n)
+   * @returns {String} The data of every node concated with -> symbol
+   */
   print() {
     let currentNode = this.head;
     const nodesData = [];
