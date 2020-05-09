@@ -1,12 +1,4 @@
----
-name: ":barber: Code review and merge request"
-about: Request for code review in order to merge with master
-title: '[project-id] - Brief description'
-labels: ''
-assignees: ''
----
-
-**Ticket:** _keyword #issue-number_
+:checkered_flag: **Ticket:** _keyword #issue-number_
 >:pencil2: Closes #1, Fixes #1, Resolves #2
 
 ## Description
