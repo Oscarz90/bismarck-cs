@@ -1,8 +1,8 @@
 ---
-name: "\U0001F680 Feature request"
-about: Suggest a feature for the project
-title: '[@project-@id] - Brief description'
-labels: enhancement, new feature
+name: ":rocket: Feature request"
+about: Suggest a feature for the project (new, refactor, enhancement, etc.)
+title: '[project-id] - Brief description'
+labels: new feature
 assignees: ''
 ---
 
@@ -20,4 +20,4 @@ assignees: ''
 ## :wrench: Additional context (:see_no_evil: optional)
 > :pencil2: Add any other context or screenshots about the feature request here
 
->:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesn't apply the concept
+>:ok_hand: Please fell you free either to erase instructions (those with the :pencil2:) or fill it with 'N/A' for those where it doesn't apply the concept
