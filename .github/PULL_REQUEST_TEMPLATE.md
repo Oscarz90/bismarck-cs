@@ -1,7 +1,13 @@
+---
+name: ":barber: Code review and merge request"
+about: Request for code review in order to merge with master
+title: '[project-id] - Brief description'
+labels: ''
+assignees: ''
+---
+
 **Ticket:** _keyword #issue-number_
->:pencil2: **keywords**: Closes, Fixes, Resolves  
->_e.g. **Ticket:** Resolves #1_  
->_e.g. **Ticket:** Resolves #1, Closes #4_
+>:pencil2: Closes #1, Fixes #1, Resolves #2
 
 ## Description
 
@@ -54,4 +60,4 @@ Please check if your PR fulfills the following requirements:
 
 >:pencil2: If there are missing information that should be included please feel you free to use this section to add it 
 
->:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesn't apply the concept
+>:ok_hand: Please fell you free either to erase instructions (those with the :pencil2:) or fill it with 'N/A' for those where it doesn't apply the concept

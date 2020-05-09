@@ -1,7 +1,7 @@
 ---
-name: "📚 Docs issue report or enhancement request"
+name: ":books: Docs issue report or enhancement request"
 about: Report an issue or enhancement in repo's documentation or website application
-title: '[@project-@id] - Brief description'
+title: '[project-id] - Brief description'
 labels: docs
 assignees: ''
 ---
@@ -46,4 +46,4 @@ assignees: ''
 **Anything else relevant?**
 >:pencil2: Do any of these matter: operating system, IDE, package manager, HTTP server, browser (brand and version), package.json file, ...? If so, please mention it below :arrow_down:
 
->:ok_hand: Please fell you free either to erase instructions (those with the :pencil2: emoji) or fill it with 'N/A' for those where it doesn't apply the concept
+>:ok_hand: Please fell you free either to erase instructions (those with the :pencil2:) or fill it with 'N/A' for those where it doesn't apply the concept
