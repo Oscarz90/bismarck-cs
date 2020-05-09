@@ -1,5 +1,5 @@
 ---
-name: ":rocket: Feature request"
+name: "\U0001F680 Feature request"
 about: Suggest a feature for the project (new, refactor, enhancement, etc.)
 title: '[project-id] - Brief description'
 labels: new feature
