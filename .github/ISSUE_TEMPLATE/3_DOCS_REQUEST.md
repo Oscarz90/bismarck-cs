@@ -1,5 +1,5 @@
 ---
-name: ":books: Docs issue report or enhancement request"
+name: "\U0001F4DA Docs issue report or enhancement request"
 about: Report an issue or enhancement in repo's documentation or website application
 title: '[project-id] - Brief description'
 labels: docs

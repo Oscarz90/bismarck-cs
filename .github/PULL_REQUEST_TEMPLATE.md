@@ -1,5 +1,5 @@
 ---
-name: ":barber: Code review and merge request"
+name: "\U0001f488 Code review and merge request"
 about: Request for code review in order to merge with master
 title: '[project-id] - Brief description'
 labels: ''
