@@ -1,10 +1,32 @@
+/* eslint-disable no-bitwise */
 /**
  * Check if a string has a permutation that is a palindrome
  * Time complexity: O(n)
  * @param {string} str - The given string to check if a permutation is a palindrome
  * @returns {boolean} A boolean value indicating if the given string is a permutation of itself and a palindrome
  */
-export default function palindromePermutationOptimized(str) {
+export default function palindromePermutationBitwise(str) {
+  let frequencyTable = 0;
+  const baseIndex = 'a'.charCodeAt(0);
+  for (let i = 0; i < str.length; i += 1) {
+    const move = str.charCodeAt(i) - baseIndex;
+    const mask = 1 << move;
+    if ((frequencyTable & mask) === 0) {
+      frequencyTable |= mask;
+    } else {
+      frequencyTable &= ~mask;
+    }
+  }
+
+  return (frequencyTable & (frequencyTable - 1)) === 0;
+}
+/**
+ * Check if a string has a permutation that is a palindrome
+ * Time complexity: O(n)
+ * @param {string} str - The given string to check if a permutation is a palindrome
+ * @returns {boolean} A boolean value indicating if the given string is a permutation of itself and a palindrome
+ */
+export function palindromePermutationOptimized(str) {
   const tableFrequency = {};
   let countOdd = 0;
   for (let i = 0; i < str.length; i += 1) {
