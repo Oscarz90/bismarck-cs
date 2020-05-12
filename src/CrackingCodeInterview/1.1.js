@@ -11,6 +11,8 @@
 export default function isUniqueOptimized(str) {
   if (!str) return false;
 
+  if (str.length === 1) return true;
+
   let mask = 0;
   const aUnicode = 'a'.charCodeAt(0);
   for (let i = 0; i < str.length; i += 1) {
