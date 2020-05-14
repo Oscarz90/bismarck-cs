@@ -43,7 +43,9 @@
     "tasks": "ntl",
     "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks ./src/**/*.test.js",
     "test:single": "cross-env NODE_ENV=test mocha -w -c -S -R spec --require @babel/register --check-leaks",
-    "test:watch": "cross-env NODE_ENV=test yarn test -w"
+    "test:watch": "cross-env NODE_ENV=test yarn test -w",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -88,11 +90,12 @@
     "nyc": "^15.0.0",
     "prettier": "^2.0.2",
     "shx": "^0.3.2",
-    "snyk": "^1.305.1",
     "standard-changelog": "^2.0.21",
     "standard-version": "^7.1.0"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
-  }
+    "lodash": "^4.17.15",
+    "snyk": "^1.320.3"
+  },
+  "snyk": true
 }
