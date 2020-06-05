@@ -14,6 +14,11 @@ module.exports = {
     'prettier',
     'mocha',
   ],
+  settings: {
+    'import/resolver': {
+      'babel-module': {}
+    }
+  },
   rules: {
     'prettier/prettier': [
       'error',

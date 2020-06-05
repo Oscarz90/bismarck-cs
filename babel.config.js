@@ -5,4 +5,15 @@ module.exports = {
       plugins: ['istanbul'],
     },
   },
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['./'],
+        alias: {
+          '@': './src',
+        },
+      },
+    ],
+  ],
 };
