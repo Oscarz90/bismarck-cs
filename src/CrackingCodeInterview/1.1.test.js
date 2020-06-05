@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import isUniqueOptimized, { isUnique } from './1.1';
+import isUniqueOptimized, { isUnique } from '@/CrackingCodeInterview/1.1';
 
 describe('When test isUnique function', function () {
   let strUnique;
