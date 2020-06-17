@@ -25,3 +25,5 @@
 ![Gitter](https://img.shields.io/gitter/room/oscarz90/bismarck-cs)
 
 Algorithms and data structures implemented in JavaScript, with explanations and links to further readings.
+
+To test commit lint extension
