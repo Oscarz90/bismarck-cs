@@ -1,8 +1,8 @@
 /**
- * Find the smallest value within a given list
+ * Find the index of the smallest value within a given list
  * - Time complexity: O(n)
  * @param {Array.<Number>} list - The given list to look within it the lowest value
- * @returns {number} The smallest value of the given list
+ * @returns {number} The index of the smallest value of the given list
  */
 export function findLowest(list) {
   let smallestIndex = 0;
