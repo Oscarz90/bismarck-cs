@@ -1,11 +1,11 @@
 import { expect } from 'chai';
-import LinkedList from './LinkedList';
+import SinglyLinkedList from './SinglyLinkedList';
 import Node from './Node';
 
 describe('Simply Linked List', function () {
-  const testList = new LinkedList();
-  it('It should be instace of LinkedList Class', function () {
-    expect(testList).to.be.an.instanceOf(LinkedList);
+  const testList = new SinglyLinkedList();
+  it('It should be instace of SinglyLinkedList Class', function () {
+    expect(testList).to.be.an.instanceOf(SinglyLinkedList);
   });
 
   describe('Adding Nodes', function () {
@@ -18,7 +18,7 @@ describe('Simply Linked List', function () {
       testList.add(3);
       testList.add(4);
       testList.add(5);
-      expect(testList.print()).to.be.equal('2 -> 3 -> 4 -> 5');
+      expect(testList.print()).to.be.equal('2->3->4->5');
     });
 
     it('When checking if list is empty Then it should return false', function () {
@@ -42,8 +42,8 @@ describe('Simply Linked List', function () {
         expect(testList.tail).to.be.equal(tailNode);
       });
 
-      it("Then it should print '2 -> 3 -> 4'", function () {
-        expect(testList.print()).to.be.equal('2 -> 3 -> 4');
+      it("Then it should print '2->3->4'", function () {
+        expect(testList.print()).to.be.equal('2->3->4');
       });
 
       it('Then its size should be 3', function () {
@@ -69,8 +69,8 @@ describe('Simply Linked List', function () {
         expect(testList.head).to.be.equal(tailNode);
       });
 
-      it("Then it should print '3 -> 4'", function () {
-        expect(testList.print()).to.be.equal('3 -> 4');
+      it("Then it should print '3->4'", function () {
+        expect(testList.print()).to.be.equal('3->4');
       });
 
       it('Then its size should be 2', function () {
@@ -139,12 +139,12 @@ describe('Simply Linked List', function () {
     });
 
     it('Testing corner case when trying to delete a node of an empty list', function () {
-      const list = new LinkedList();
+      const list = new SinglyLinkedList();
       list.delete(new Node(1), new Node(2));
     });
 
     it('Testing corner case when trying to get a node of an empty list', function () {
-      const list = new LinkedList();
+      const list = new SinglyLinkedList();
       list.get(1);
     });
   });

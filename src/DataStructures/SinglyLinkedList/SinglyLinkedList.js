@@ -1,4 +1,4 @@
-import { isNil } from 'lodash';
+import _ from 'lodash';
 import Node from './Node';
 
 export default class LinkedList {
@@ -16,7 +16,7 @@ export default class LinkedList {
   add(data) {
     const newNode = new Node(data);
 
-    if (isNil(this.head)) {
+    if (_.isNil(this.head)) {
       this.head = newNode;
       this.tail = newNode;
     } else {
@@ -34,7 +34,7 @@ export default class LinkedList {
    * @param {Node} previousNode The previous node of the given node to delete, it can be null
    */
   delete(node, previousNode) {
-    if (this.isEmpty() || isNil(node)) return;
+    if (this.isEmpty() || _.isNil(node)) return;
 
     if (node === this.head && node === this.tail) {
       this.head = null;
@@ -62,7 +62,7 @@ export default class LinkedList {
    * @param {*} data The given data to look up in the list
    */
   get(data) {
-    if (isNil(this.head) || isNil(data)) return null;
+    if (_.isNil(this.head) || _.isNil(data)) return null;
 
     let currentNode = this.head;
     while (currentNode) {
@@ -106,7 +106,7 @@ export default class LinkedList {
       nodesData.push(currentNode.data);
       currentNode = currentNode.next;
     }
-    return nodesData.join(' -> ');
+    return nodesData.join('->');
   }
 
   /**
