@@ -1,4 +1,4 @@
-import Node from '@/DataStructures/LinkedList/Node';
+import Node from '@/DataStructures/SinglyLinkedList/Node';
 
 /**
  * Gather all node´s data and join them in a string separating the values with a symbol (separator)

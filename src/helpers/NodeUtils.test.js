@@ -1,4 +1,4 @@
-import LinkedList from '@/DataStructures/LinkedList/LinkedList';
+import SinglyLinkedList from '@/DataStructures/SinglyLinkedList/SinglyLinkedList';
 import { expect } from 'chai';
 import { printNodeChain, reverseList } from './NodeUtils';
 
@@ -6,7 +6,7 @@ describe('Node Utils', function () {
   let testList;
 
   beforeEach(function () {
-    testList = new LinkedList();
+    testList = new SinglyLinkedList();
     testList.add(5);
     testList.add(3);
     testList.add(1);
