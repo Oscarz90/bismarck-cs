@@ -41,7 +41,7 @@
     "setenv:prod": "yarn config set production true",
     "start": "nodemon --exec babel-node src/index.js",
     "tasks": "ntl",
-    "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks --recursive src",
+    "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks --recursive ./src/**/*.test.js",
     "test:single": "cross-env NODE_ENV=test mocha -w -c -S -R spec --require @babel/register --check-leaks",
     "test:watch": "cross-env NODE_ENV=test yarn test -w"
   },
