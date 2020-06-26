@@ -19,6 +19,7 @@ export function printNodeChain(head, separator = '->') {
 
 /**
  * Reverse a list
+ * - Time complexity: O(n)
  * @param {Node} headNode - The list's head to start reversing the list
  * @returns {Node} The new head of the reversed list
  */
