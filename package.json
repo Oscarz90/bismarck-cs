@@ -15,7 +15,7 @@
     "clean:coverage": "shx rm -rf coverage",
     "clean:dist": "shx rm -rf dist",
     "clean:reports": "shx rm -rf reports",
-    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha src/**/*.js",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --recursive src",
     "debug": "nodemon src/index.js --exec babel-node --debug",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
@@ -24,7 +24,7 @@
     "lint:markdown-links": "markdown-link-check README.md",
     "monitor": "nodejs-dashboard node dist",
     "postcoverage": "cross-env NODE_ENV=test nyc check-coverage",
-    "posttest": "cross-env NODE_ENV=test mocha -S -R mochawesome --require @babel/register --reporter-options reportDir=reports --check-leaks ./src/**/*.test.js",
+    "posttest": "cross-env NODE_ENV=test mocha -S -R mochawesome --require @babel/register --reporter-options reportDir=reports --check-leaks --recursive src",
     "prebuild": "yarn run clean:dist",
     "precoverage": "yarn run clean:coverage",
     "premonitor": "yarn run clean:dist && yarn run build",
@@ -41,7 +41,7 @@
     "setenv:prod": "yarn config set production true",
     "start": "nodemon --exec babel-node src/index.js",
     "tasks": "ntl",
-    "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks ./src/**/*.test.js",
+    "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks --recursive ./src/**/*.test.js",
     "test:single": "cross-env NODE_ENV=test mocha -w -c -S -R spec --require @babel/register --check-leaks",
     "test:watch": "cross-env NODE_ENV=test yarn test -w"
   },
@@ -67,12 +67,14 @@
     "@commitlint/config-angular": "^8.3.4",
     "babel-eslint": "^10.1.0",
     "babel-plugin-istanbul": "^6.0.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
+    "eslint-import-resolver-babel-module": "^5.1.2",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.2",
@@ -91,5 +93,8 @@
     "snyk": "^1.305.1",
     "standard-changelog": "^2.0.21",
     "standard-version": "^7.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
