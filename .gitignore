@@ -106,3 +106,6 @@ dist
 
 # MacOs' Files
 .DS_Store
+
+
+.nx/cache

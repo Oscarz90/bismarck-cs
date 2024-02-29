@@ -1,4 +1,4 @@
-class Stack {
+export class Stack {
   _stack = []
   constructor(){}
 
