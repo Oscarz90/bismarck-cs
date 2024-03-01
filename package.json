@@ -17,8 +17,8 @@
     "clean:reports": "shx rm -rf reports",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --recursive src",
     "debug": "nodemon src/index.js --exec babel-node --debug",
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
+    "lint": "nx run-many --target=lint --all",
+    "lint:fix": "nx run-many --target=lint:fix --all",
     "lint:git": "commitlint -e",
     "lint:markdown": "markdownlint README.md",
     "lint:markdown-links": "markdown-link-check README.md",
@@ -45,12 +45,6 @@
     "test": "cross-env NODE_ENV=test mocha -c -S -R spec --require @babel/register --check-leaks --recursive ./src/**/*.test.js",
     "test:single": "cross-env NODE_ENV=test mocha -w -c -S -R spec --require @babel/register --check-leaks",
     "test:watch": "cross-env NODE_ENV=test yarn test -w"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "lint-staged": {
     "src/**/*.{js}": [
@@ -131,6 +125,7 @@
     "vitest": "^1.3.1"
   },
   "dependencies": {
+    "@bismarck-cs/data-structures": "^0.0.1",
     "lodash": "^4.17.15",
     "react": "18.2.0",
     "react-dom": "18.2.0",

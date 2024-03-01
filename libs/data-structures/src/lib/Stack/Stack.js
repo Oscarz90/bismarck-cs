@@ -1,24 +1,26 @@
 export class Stack {
-  _stack = []
-  constructor(){}
+  
+  constructor(){
+    this.stack = []
+  }
 
   pop(){
-    return this._stack.pop();
+    return this.stack.pop();
   }
 
   push(item) {
-    this._stack.push(item);
+    this.stack.push(item);
   }
 
   peek(){
-    return this._stack[this._stack.length -1];
+    return this.stack[this.stack.length -1];
   }
 
   isEmpty(){
-    return this._stack.length === 0;
+    return this.stack.length === 0;
   }
 
   get length(){
-    return this._stack.length;
+    return this.stack.length;
   }
 }
