@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-
-import App from './app/app';
+import { ThemeProvider } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,8 +10,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <div className="bg-indigo-500 p-2 font-mono">Hello!</div>;
-      {/* <App /> */}
+      <ThemeProvider>
+        <div className="bg-indigo-500 p-2 font-mono">Hello!</div>;
+        <Button>Button</Button>
+      </ThemeProvider>
     </BrowserRouter>
   </StrictMode>
 );
