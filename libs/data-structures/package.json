@@ -1,6 +1,6 @@
 {
-  "name": "@bismarck/data-structures",
-  "version": "0.0.1",
+  "name": "@bismarck-cs/data-structures",
+  "version": "0.0.2",
   "dependencies": {
     "tslib": "^2.3.0"
   },

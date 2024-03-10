@@ -109,3 +109,7 @@ dist
 
 
 .nx/cache
+
+# nx - production
+build
+dist
