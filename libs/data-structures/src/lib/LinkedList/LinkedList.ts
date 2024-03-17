@@ -1,13 +1,17 @@
-import { Node } from '../shared/Node';
+import { Node } from './Node';
 
-export class LinkedList {
+export class LinkedList<T> {
+  head: Node | null;
+  tail: Node | null;
+  length: number;
+
   constructor() {
     this.head = null;
     this.tail = null;
     this.length = 0;
   }
 
-  push(value) {
+  push(value: T) {
     const node = new Node(value);
 
     if (this.isEmpty()) {
@@ -21,7 +25,7 @@ export class LinkedList {
     this.length++;
   }
 
-  pop() {
+  pop(): Node | null {
     if (this.isEmpty()) return null;
 
     if (this.length === 1) {
@@ -53,7 +57,7 @@ export class LinkedList {
     return nodeToRemove;
   }
 
-  get(index) {
+  get(index: number): Node | null {
     if (index < 0 || index >= this.length || this.isEmpty()) return null;
 
     if (index === 0) return this.head;
@@ -71,7 +75,7 @@ export class LinkedList {
     return currentNode;
   }
 
-  delete(index) {
+  delete(index: number): Node | null {
     if (index < 0 || index >= this.length || this.isEmpty()) return null;
 
     let nodeToRemove;
@@ -108,7 +112,7 @@ export class LinkedList {
     return nodeToRemove;
   }
 
-  isEmpty() {
+  isEmpty(): boolean {
     return this.length === 0;
   }
 }

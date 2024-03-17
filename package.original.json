@@ -47,10 +47,7 @@
     "test:watch": "cross-env NODE_ENV=test yarn test -w"
   },
   "lint-staged": {
-    "src/**/*.{js}": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    "src/**/*.{js}": ["prettier --single-quote --write", "git add"]
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
