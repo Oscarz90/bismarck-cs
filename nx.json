@@ -12,13 +12,9 @@
       "!{projectRoot}/src/test-setup.[jt]s",
       "!{projectRoot}/test-setup.[jt]s"
     ],
-    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
+    "sharedGlobals": ["{workspaceRoot}/.circleci/config.yml"]
   },
-  "nxCloudId": "66f3a014bb580d02cfcc2b5a",
-  "workspaceLayout": {
-    "appsDir": "apps",
-    "libsDir": "libs"
-  },
+  "nxCloudId": "66f43cb0f8029747dfe64618",
   "plugins": [
     {
       "plugin": "@nx/vite/plugin",
@@ -59,13 +55,6 @@
         "style": "tailwind",
         "linter": "eslint"
       }
-    }
-  },
-  "targetDefaults": {
-    "@nx/js:tsc": {
-      "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
     }
   }
 }
