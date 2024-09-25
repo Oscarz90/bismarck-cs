@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@@bismarck/data-structures": ["libs/data-structures/src/index.ts"],
+      "@@bismarck/sorting-algorithms": ["libs/sorting-algorithms/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
