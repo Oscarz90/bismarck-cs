@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bismarck/data-structure": ["libs/data-structure/src/index.ts"]
+      "@bismarck/data-structures": ["libs/data-structures/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -22,25 +22,23 @@ export function bfs(
     visited.add(current);
 
     const adjacencies = graph.get(current) ?? [];
-    for(let idx = 0; idx<=adjacencies.length; idx++) {
-        const vertex = adjacencies[idx];
-        if(visited.has(vertex))
-            continue;
+    for (let idx = 0; idx <= adjacencies.length; idx++) {
+      const vertex = adjacencies[idx];
+      if (visited.has(vertex)) continue;
 
-        visited.add(adjacencies[idx]);
-        previousNode.set(vertex, current);
+      visited.add(adjacencies[idx]);
+      previousNode.set(vertex, current);
     }
   }
 
-  if (previousNode.get(needle) === undefined)
-    return []
+  if (previousNode.get(needle) === undefined) return [];
 
   const pathToNode: number[] = [];
   let current: number | undefined = needle;
 
-  while(current != undefined) {
+  while (current != undefined) {
     pathToNode.push(current);
-    current = previousNode.get(current)
+    current = previousNode.get(current);
   }
 
   return pathToNode.reverse();
