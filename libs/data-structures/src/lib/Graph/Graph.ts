@@ -1,8 +1,8 @@
-import { Node } from './Node';
+import { Node } from './Vertex';
 
 export class Graph<T> {
   directed: boolean;
-  nodes: Array<Node>;
+  nodes: Array<Node<T>>;
 
   constructor(directed = false) {
     this.directed = directed;
@@ -15,24 +15,24 @@ export class Graph<T> {
 
   removeNode(value: T) {
     const isNotThisNode = (nodeValue: T) => {
-      return (node: Node) => node.value !== nodeValue;
+      return (node: Node<T>) => node.value !== nodeValue;
     };
 
     // filter main node's list
     this.nodes = this.nodes.filter(isNotThisNode(value));
     // filter every node's edges
-    this.nodes.forEach((node: Node) => {
+    this.nodes.forEach((node: Node<T>) => {
       node.edges = node.edges.filter(isNotThisNode(value));
     });
   }
 
-  getNode(value: T): Node | undefined {
-    return this.nodes.find((node: Node) => node.value === value);
+  getNode(value: T): Node<T> | undefined {
+    return this.nodes.find((node: Node<T>) => node.value === value);
   }
 
   addEdge(firstValue: T, secondValue: T) {
-    const firstNode: Node | undefined = this.getNode(firstValue);
-    const secondNode: Node | undefined = this.getNode(secondValue);
+    const firstNode: Node<T> | undefined = this.getNode(firstValue);
+    const secondNode: Node<T> | undefined = this.getNode(secondValue);
 
     if (firstNode && secondNode) {
       firstNode.edges.push(secondNode);

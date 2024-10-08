@@ -1,0 +1,33 @@
+{
+  "name": "data-structures",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/data-structures/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/data-structures",
+        "main": "libs/data-structures/src/index.ts",
+        "tsConfig": "libs/data-structures/tsconfig.lib.json",
+        "assets": ["libs/data-structures/*.md"]
+      }
+    },
+    "lint:fix": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "fix": true
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/data-structures/jest.config.ts",
+        "passWithNoTests": true,
+        "watch": true
+      }
+    }
+  }
+}

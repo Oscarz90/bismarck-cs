@@ -62,6 +62,9 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "@nx/eslint:lint": {
+      "cache": true
     }
   }
 }
