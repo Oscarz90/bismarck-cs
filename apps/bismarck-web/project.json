@@ -5,5 +5,20 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project bismarck-web --web",
-  "targets": {}
+  "targets": {
+    "lint:fix": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "fix": true
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/bismarck-web/jest.config.ts",
+        "passWithNoTests": true,
+        "watch": true
+      }
+    }
+  }
 }

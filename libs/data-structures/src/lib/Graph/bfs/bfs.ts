@@ -1,7 +1,4 @@
-import { addAbortSignal } from 'stream';
 import { AdjacencyList } from '../Graph.types';
-import { Vertex } from '../Vertex';
-import path = require('path');
 
 export function bfs(
   graph: AdjacencyList,
@@ -34,7 +31,7 @@ export function bfs(
   if (previousNode.get(needle) === undefined) return [];
 
   const pathToNode: number[] = [];
-  let current: number | undefined = needle;
+      let current: number | undefined = needle;
 
   while (current != undefined) {
     pathToNode.push(current);

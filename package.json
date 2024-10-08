@@ -2,7 +2,11 @@
   "name": "@bismarck/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint": "nx run-many --all --target=lint",
+    "lint:fix": "nx run-many --all --target=lint:fix",
+    "test": "nx run-many --all --target=test --watch"
+  },
   "private": true,
   "dependencies": {
     "react": "18.3.1",
